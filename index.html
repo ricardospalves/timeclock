@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeclock</title>
 
+  <link rel="manifest" href="manifest.json">
+
   <style>
     * {
       margin: 0;
@@ -25,5 +27,16 @@
   <button>Button</button>
 
   <script src="main.js" async></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceworker.js')
+        .then(() => {
+          console.log('service worker registered')
+        })
+        .catch(() => {
+          console.warn('service worker failed')
+        })
+    }
+  </script>
 </body>
 </html>

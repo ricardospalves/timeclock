@@ -1,0 +1,6 @@
+{
+  "name": "Timeclock",
+  "short_name": "Timeclock",
+  "display": "standalone",
+  "start_url": "/"
+}
