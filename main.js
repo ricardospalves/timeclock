@@ -5,8 +5,6 @@
   const elButton = document.querySelector('button')
   const times = loadLocalstorage() || []
 
-  console.log(times)
-
   elButton.addEventListener('click', event => {
     const timestamp = +new Date()
     const id = generateId()
