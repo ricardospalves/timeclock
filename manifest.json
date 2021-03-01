@@ -2,5 +2,5 @@
   "name": "Timeclock",
   "short_name": "Timeclock",
   "display": "standalone",
-  "start_url": "/"
+  "start_url": "https://ricardospalves.github.io/timeclock/"
 }

@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeclock</title>
-
+  <link rel="canonical" href="https://ricardospalves.github.io/timeclock/">
+  <meta name="robots" content="nofollow, noindex">
   <link rel="manifest" href="manifest.json">
 
   <style>
@@ -29,7 +30,7 @@
   <script src="main.js" async></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('serviceworker.js')
+      navigator.serviceWorker.register('/timeclock/serviceworker.js')
         .then(() => {
           console.log('service worker registered')
         })

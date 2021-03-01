@@ -4,9 +4,9 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll([
-        '/',
-        'index.html',
-        'main.js'
+        '/timeclock/',
+        '/timeclock/index.html',
+        '/timeclock/main.js'
       ])
     })
   )
